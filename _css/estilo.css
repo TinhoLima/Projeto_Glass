@@ -18,16 +18,22 @@ div#interface {
     padding: 15px;
 }
 
-header#cabecalho img#icone {
-    position: absolute;
-    top: 60px;
-    left: 1100px;
-}
-header#cabecalho { /*1 imagem aqui*/
+header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 170px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat -5px 100px; /*usamos 2 pontos pra voltar uma pasta*/
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat -5px 100px; 
+    /* usamos 2 pontos pra voltar uma pasta */
 }
+
+header#cabecalho img#icone {
+    /* position: absolute; */
+    display: flex;
+    margin-left: 850px;
+    margin-top: -70px;
+    /* top: 60px;
+    left: 1000px; */
+}
+
 header#cabecalho h1 {
     font-family: 'fonte-logo', sans-serif;
     font-size: 45px;
@@ -82,15 +88,18 @@ figure.foto-legenda:hover figcaption {
 
 /*--- Formatação do Menu -----*/
 nav#menu{ /* pra ser transformado em um bloco pra que eu possa pocisionar ele dentro do meu site*/
-    display: block ; 
+    display: flex ; 
+    margin-left: 400px;
+    margin-top: -200px;
     /* como só queremos movimentar a lista vamos botar posição absoluta nela*/
 }
 nav#menu ul{
     list-style: none; /* tirou meus marcadores ° */
     text-transform: uppercase; /* deixou em maiusculo*/
-    position: absolute; /* absolute permite andar pra qualquer lugar na página diferende to relative que poderia se movimentar somente dentro do nav*/
-    top: -20px;
-    left: 650px;
+    /* position: absolute;  */
+    /* absolute permite andar pra qualquer lugar na página diferende to relative que poderia se movimentar somente dentro do nav*/
+    /* top: -20px; */
+    /* left: 650px; */
 }
 nav#menu li {
     display: inline-block; /* faz tudo ficar na mesma linha*/
